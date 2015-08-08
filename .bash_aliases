@@ -51,3 +51,6 @@ if [ $UID -ne 0 ]; then
     alias reboot='sudo reboot'
     alias update='sudo apt-get upgrade'
 fi
+
+# easy alias for vpn connection, since gnome gui fucks up in 15.04
+alias bnaavpn='. ~/code/config/bnaavpn'
