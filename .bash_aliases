@@ -7,14 +7,19 @@
 if [ "$TERM" == "xterm" ]; then
     export TERM=xterm-256color
 fi
+# make theese aliases available when sudo'ing too.
+alias sudo="sudo "
 
 # cli convienience
 alias ..='cd ..'
 alias cd..='cd ..'
 alias c='clear'
 alias mkdir='mkdir -pv' # make parent dirs, and be verbose about it.
-alias ls='ls -a'
 
+# nicer directory listings, all files by default - with colors all around
+alias ls='ls --color=auto -a'
+alias ll='ls --color=auto -alF'
+alias l='ls'
 # Too much time spent on FreeBSD to forget theese!
 alias h='history'
 alias j='jobs -l'
@@ -53,4 +58,4 @@ if [ $UID -ne 0 ]; then
 fi
 
 # easy alias for vpn connection, since gnome gui fucks up in 15.04
-alias bnaavpn='. ~/code/config/bnaavpn'
+alias bnaavpn='. /home/effi/code/bnaavpn'
