@@ -8,7 +8,7 @@
 
 alias h		history 25
 alias j		jobs -l
-alias ls        ls -G
+alias ls        ls -GF
 alias la	ls -aFG
 alias lf	ls -FAG
 alias ll	ls -lAFG
