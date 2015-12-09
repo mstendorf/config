@@ -6,3 +6,5 @@ $include /etc/inputrc
 "\e[A":history-search-backward
 ## arrow down
 "\e[B":history-search-forward
+"\eOD": backward-word
+"\eOC": forward-word

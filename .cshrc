@@ -12,7 +12,7 @@ alias ls        ls -GF
 alias la	ls -aFG
 alias lf	ls -FAG
 alias ll	ls -lAFG
-alias emacs     emacsclient
+alias emacs     emacsclient -c
 alias ..        cd ..
 alias c         clear
 alias cd..      cd ..
@@ -52,6 +52,8 @@ if ($?prompt) then
 		bindkey "^W" backward-delete-word
 		bindkey -k up history-search-backward
 		bindkey -k down history-search-forward
+                bindkey '^[[1;5D'   backward-word           # ctrl+left
+                bindkey '^[[1;5C'   forward-word            # ctrl+right]]']]'
 	endif
 
 endif
