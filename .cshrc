@@ -53,7 +53,7 @@ if ($?prompt) then
 		bindkey -k up history-search-backward
 		bindkey -k down history-search-forward
                 bindkey '^[[1;5D'   backward-word           # ctrl+left
-                bindkey '^[[1;5C'   forward-word            # ctrl+right]]']]'
+                bindkey '^[[1;5C'   forward-word            # ctrl+right
 	endif
 
 endif
