@@ -47,7 +47,7 @@ alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log'
 # Fixes for ubuntu - make the cli feel more like home.
 alias su='sudo -i' #There fixed it!
 # make emacs stay in the cli, when invoked from the cli.
-alias emacs='emacs -nw'
+alias emacs='emacsclient -t'
 
 # if user is not root, pass all commands via sudo #
 # yes, i freaking hate sudo, and i always forget with apt-get.
@@ -57,6 +57,6 @@ if [ $UID -ne 0 ]; then
     alias update='sudo apt-get upgrade'
 fi
 
-# easy alias for vpn connection, since gnome gui fucks up in 15.04
-alias bnaavpn='. /home/effi/code/bnaavpn'
-PS1='\u@\h:\w$ '
+
+# I can't handle writing sudo for every docker command
+alias docker='sudo docker'
