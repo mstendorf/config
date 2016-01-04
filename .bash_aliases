@@ -59,4 +59,4 @@ fi
 
 # easy alias for vpn connection, since gnome gui fucks up in 15.04
 alias bnaavpn='. /home/effi/code/bnaavpn'
-PS1='\u@\h:\w$ '
+#PS1='\u@\h:\w$ '
