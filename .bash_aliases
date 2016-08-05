@@ -57,6 +57,9 @@ if [ $UID -ne 0 ]; then
     alias update='sudo apt-get upgrade'
 fi
 
+# easy alias for vpn connection, since gnome gui fucks up in 15.04
+alias bnaavpn='. /home/effi/code/bnaavpn'
+#PS1='\u@\h:\w$ '
 
 # I can't handle writing sudo for every docker command
 #alias docker='sudo docker'
