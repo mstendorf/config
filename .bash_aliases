@@ -62,4 +62,5 @@ alias bnaavpn='. /home/effi/code/bnaavpn'
 #PS1='\u@\h:\w$ '
 
 # I can't handle writing sudo for every docker command
-alias docker='sudo docker'
+#alias docker='sudo docker'
+#alias docker-compose='sudo docker-compose'
