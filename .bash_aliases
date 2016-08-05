@@ -47,7 +47,7 @@ alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log'
 # Fixes for ubuntu - make the cli feel more like home.
 alias su='sudo -i' #There fixed it!
 # make emacs stay in the cli, when invoked from the cli.
-alias emacs='emacsclient -t'
+alias emacs='emacsclient -t -a ""'
 
 # if user is not root, pass all commands via sudo #
 # yes, i freaking hate sudo, and i always forget with apt-get.
@@ -59,4 +59,6 @@ fi
 
 
 # I can't handle writing sudo for every docker command
-alias docker='sudo docker'
+#alias docker='sudo docker'
+#alias docker-compose='sudo docker-compose'
+#alias docker-cleanup='sudo docker-cleanup'-
