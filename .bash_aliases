@@ -65,3 +65,5 @@ alias bnaavpn='. /home/effi/code/bnaavpn'
 #alias docker='sudo docker'
 #alias docker-compose='sudo docker-compose'
 #alias docker-cleanup='sudo docker-cleanup'-
+alias dockrm='docker rm $(docker ps -a -q)'
+alias dockrmi='docker rmi $(docker images -q)'
